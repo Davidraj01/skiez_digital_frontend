@@ -123,13 +123,11 @@ export default function Navbar() {
           <div className="mx-auto max-w-[1200px] px-6 md:px-12 flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
-              <span className="inline-flex items-center justify-center rounded-md bg-white p-1 shadow-sm">
-                <img
-                  src={logo}
-                  alt="Logo"
-                  className="w-22 h-14 object-contain"
-                />
-              </span>
+              <img
+                src={logo}
+                alt="Logo"
+                className="w-22 h-14 object-contain"
+              />
             </Link>
 
             {/* Desktop nav */}

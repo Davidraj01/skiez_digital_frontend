@@ -13,7 +13,9 @@ import { Toaster } from "react-hot-toast";
 
 // Lazy-loaded routes
 const Services = React.lazy(() => import("./pages/Services"));
-const Blog = React.lazy(() => import("./pages/Blog"));
+// Blog is taken down for now — kept here (commented) for when it's restored.
+// const Blog = React.lazy(() => import("./pages/Blog"));
+const BlogGone = React.lazy(() => import("./pages/BlogGone"));
 const Contact = React.lazy(() => import("./pages/Contact"));
 const About = React.lazy(() => import("./pages/About"));
 const WebDevelopment = React.lazy(() => import("./pages/services/WebDevelopment"));
@@ -29,7 +31,7 @@ const GoogleCampign = React.lazy(() => import("./pages/DigitalMarketing/GoogleCa
 const Careers = React.lazy(() => import("./pages/Careers"));
 const Privacy = React.lazy(() => import("@/pages/Privacy"));
 const Terms = React.lazy(() => import("./pages/Terms"));
-const BlogPost = React.lazy(() => import("./pages/BlogPost"));
+// const BlogPost = React.lazy(() => import("./pages/BlogPost"));
 
 // Admin panel
 const AdminLogin = React.lazy(() => import("./admin/Login"));
@@ -91,8 +93,8 @@ const App = () => {
                 <Route path="/services/seo-marketing" element={<SeoMarketing />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/careers" element={<Careers />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/blog/:slug" element={<BlogPost />} />
+                <Route path="/blog" element={<BlogGone />} />
+                <Route path="/blog/:slug" element={<BlogGone />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services/digital-marketing/seo" element={<Seo />} />
                 <Route path="/services/digital-marketing/email-marketing" element={<EmailMarketing />} />
