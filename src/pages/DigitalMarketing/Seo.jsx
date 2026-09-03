@@ -48,7 +48,7 @@ export default function SEO() {
     },
     {
       name: "Lighthouse",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/google/google-original.svg",
+      logo: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/lighthouse.svg",
     },
     {
       name: "Screaming Frog",

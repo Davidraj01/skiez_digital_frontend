@@ -73,13 +73,6 @@ const deliverables = [
       logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/miro.svg",
     },
 
-    /* Prototyping & Motion */
-    
-    {
-      name: "Figma Prototypes",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg",
-    },
-
     /* Research & Testing */
 
     {
@@ -107,7 +100,10 @@ const deliverables = [
       logo: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/jira.svg",
     },
 ];
-  
+
+const techRow1 = tech.slice(0, Math.ceil(tech.length / 2));
+const techRow2 = tech.slice(Math.ceil(tech.length / 2));
+
 const points = [
   // split from your original H4 content into scan-friendly checklist items
   "UI/UX Design: This is short for User Interface and User Experience two of the most vital elements responsible for defining the way users interact with any digital platform, such as websites, mobile apps and software.",
@@ -421,7 +417,7 @@ export default function UIUX() {
               className="flex gap-10 animate-marquee whitespace-nowrap"
               style={{ animationDuration: "40s" }}
             >
-              {tech.concat(tech).map((t, i) => (
+              {techRow1.concat(techRow1).map((t, i) => (
                 <div
                   key={`row1-${i}`}
                   className="flex flex-col items-center justify-center transition-transform hover:scale-110"
@@ -448,7 +444,7 @@ export default function UIUX() {
               className="flex gap-10 animate-marquee-reverse whitespace-nowrap"
               style={{ animationDuration: "42s" }}
             >
-              {tech.concat(tech).map((t, i) => (
+              {techRow2.concat(techRow2).map((t, i) => (
                 <div
                   key={`row2-${i}`}
                   className="flex flex-col items-center justify-center transition-transform hover:scale-110"

@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Careers from "./pages/Careers";
-import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 
 // Services – main
@@ -27,7 +26,6 @@ export const routes = [
   { path: "/about", element: <About /> },
   { path: "/services", element: <Services /> },
   { path: "/careers", element: <Careers /> },
-  { path: "/blog", element: <Blog /> },
   { path: "/contact", element: <Contact /> },
 
   // Services pages
