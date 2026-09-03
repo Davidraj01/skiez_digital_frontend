@@ -69,6 +69,9 @@ const tech = [
   },
 ];
 
+const techRow1 = tech.slice(0, Math.ceil(tech.length / 2));
+const techRow2 = tech.slice(Math.ceil(tech.length / 2));
+
 const deliverables = [
   {
     title: "Custom Mobile App Design & Development",
@@ -241,7 +244,7 @@ export default function MobileApp() {
               className="flex gap-10 animate-marquee whitespace-nowrap"
               style={{ animationDuration: "40s" }}
             >
-              {tech.concat(tech).map((t, i) => (
+              {techRow1.concat(techRow1).map((t, i) => (
                 <div
                   key={`row1-${i}`}
                   className="flex flex-col items-center justify-center transition-transform hover:scale-110"
@@ -267,7 +270,7 @@ export default function MobileApp() {
               className="flex gap-10 animate-marquee-reverse whitespace-nowrap"
               style={{ animationDuration: "42s" }}
             >
-              {tech.concat(tech).map((t, i) => (
+              {techRow2.concat(techRow2).map((t, i) => (
                 <div
                   key={`row2-${i}`}
                   className="flex flex-col items-center justify-center transition-transform hover:scale-110"

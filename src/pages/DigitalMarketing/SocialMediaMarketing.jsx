@@ -66,7 +66,7 @@ export default function SocialMediaMarketing() {
     },
     {
       name: "Light Room",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/768px-Adobe_Photoshop_Lightroom_CC_logo.svg.png?20200616120137",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg",
     },
     {
       name: "Meta Ads",

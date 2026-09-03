@@ -58,7 +58,7 @@ export default function EmailMarketing() {
     {
       key: "klaviyo",
       name: "Klaviyo",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Klaviyo-primary-logo-charcoal.svg/1200px-Klaviyo-primary-logo-charcoal.svg.png?20240325140001",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/9/98/KlaviyoLogo.jpg",
     },
     {
       key: "postmark",

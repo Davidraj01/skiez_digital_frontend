@@ -47,7 +47,7 @@ const LINKS = [
   },
   { label: "About", href: "/about" },
   { label: "Careers", href:"/careers"},
-  { label: "Blog", href: "/blog" },
+  { label: "Blog", href: "https://blog.skiezdigital.com/", external: true },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -135,6 +135,19 @@ export default function Navbar() {
               <ul className="flex items-center gap-8 text-lg font-semibold text-slate-700">
                 {LINKS.map((l) => {
                   if (!l.children) {
+                    if (l.external) {
+                      return (
+                        <li key={l.href}>
+                          <a
+                            href={l.href}
+                            className="relative hover:text-slate-900 transition-colors group"
+                          >
+                            {l.label}
+                            <span className="absolute left-0 right-0 -bottom-1 h-0.5 bg-gradient-to-r from-indigo-400 to-pink-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                          </a>
+                        </li>
+                      );
+                    }
                     return (
                       <li key={l.href}>
                         <Link
@@ -406,6 +419,21 @@ export default function Navbar() {
               <nav className="flex flex-col gap-4">
                 {LINKS.map((l, i) => {
                   if (!l.children) {
+                    if (l.external) {
+                      return (
+                        <motion.a
+                          key={l.href}
+                          href={l.href}
+                          onClick={() => setOpen(false)}
+                          className="text-2xl font-semibold text-slate-700 hover:text-indigo-500 transition px-2 py-2 rounded-md"
+                          initial={{ opacity: 0, y: -8 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.05 * i }}
+                        >
+                          {l.label}
+                        </motion.a>
+                      );
+                    }
                     return (
                       <MotionLink
                         key={l.href}
