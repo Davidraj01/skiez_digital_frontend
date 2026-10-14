@@ -112,7 +112,10 @@ const Showcase = () => {
     api
       .get("/works")
       .then((res) => setProjects(res.data.works))
-      .catch(() => setProjects([]));
+      .catch((err) => {
+        console.error("Failed to load Selected Works:", err);
+        setProjects([]);
+      });
   }, []);
 
   if (!projects.length) return null;

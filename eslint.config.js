@@ -33,4 +33,10 @@ export default defineConfig([
       'react/jsx-uses-vars': 'error',
     },
   },
+  {
+    files: ['scripts/**/*.js'],
+    languageOptions: {
+      globals: globals.node,
+    },
+  },
 ])
